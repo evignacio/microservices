@@ -1,6 +1,6 @@
-package com.ms.exemple.microservices.endpoint.services;
+package com.ms.exemple.microservices.services;
 
-import com.ms.exemple.microservices.endpoint.model.Course;
+import com.ms.exemple.microservices.model.Course;
 import org.springframework.data.domain.Pageable;
 
 public interface CourseService {

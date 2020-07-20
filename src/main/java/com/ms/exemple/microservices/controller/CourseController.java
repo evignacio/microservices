@@ -1,7 +1,7 @@
-package com.ms.exemple.microservices.endpoint.controller;
+package com.ms.exemple.microservices.controller;
 
-import com.ms.exemple.microservices.endpoint.model.Course;
-import com.ms.exemple.microservices.endpoint.services.CourseService;
+import com.ms.exemple.microservices.model.Course;
+import com.ms.exemple.microservices.services.CourseService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;

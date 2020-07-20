@@ -1,4 +1,4 @@
-package com.ms.exemple.microservices.endpoint.model;
+package com.ms.exemple.microservices.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
