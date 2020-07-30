@@ -2,7 +2,6 @@
 version: '3.1'
 
 services:
-
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -12,6 +11,6 @@ services:
       MYSQL_USER: root
       MYSQL_ROOT_PASSWORD: 102030
     volumes:
-        - microservices:/home/evandroig/Projects/mysql
+        - microservices:/home/projects/mysql
 volumes:
   microservices:
