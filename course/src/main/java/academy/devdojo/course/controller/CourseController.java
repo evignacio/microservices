@@ -1,6 +1,6 @@
 package academy.devdojo.course.controller;
 
-import academy.devdojo.course.model.Course;
+import academy.devdojo.core.model.Course;
 import academy.devdojo.course.services.CourseService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +23,7 @@ public class CourseController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<Iterable<Course>> list(Pageable pageable) {
         log.info("Listing all courses - Controller");
-        return new ResponseEntity<>(courseService.list(pageable), HttpStatus.OK);
+        return new ResponseEntity<Iterable<Course>>(courseService.list(pageable), HttpStatus.OK);
     }
+
 }

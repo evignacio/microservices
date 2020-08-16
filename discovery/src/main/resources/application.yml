@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: registry
+server:
+  port: 8081
+
+eureka:
+  client:
+    register-with-eureka: false
+    featch-registry: false
+    service-url:
+      dafeaultZone: http://localhost:${server.port}/eureka/
